@@ -1,10 +1,10 @@
 # maplang
 
-A Clojure library designed to ... well, that part is up to you.
+This is an experiment to use maps as a basis for programming instead of lists.
 
 ## Usage
 
-FIXME
+This not to be used yet if at all.
 
 ## License
 
