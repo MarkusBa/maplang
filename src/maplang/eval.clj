@@ -2,9 +2,6 @@
 
 (def environment (atom {}))
 
-;; TODO: deal with underscores
-
-
 (defn myeval [exp env]
   (cond ;; arity of 3 for now
         (contains? (keys env) (:op exp))
@@ -27,10 +24,10 @@
 
 ;;(myeval {:op :def :0 :a :1 { :op + :0 42 :1 1}} {})
 ;;(myeval {:op :def :0 :a :1 {:op identity :0 42}} {})
+;;(myeval {:op identity :0 #( println "hi")} {})
+;;(apply (myeval {:op identity :0 #( println %)} {}) '("test"))
 
 
-;; not working yet
-;;(myeval {:op def :0 sum :1 {:op + :0 _ :1 _}} {})
 
 
 
